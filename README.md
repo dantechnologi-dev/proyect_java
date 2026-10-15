@@ -1,4 +1,34 @@
 
+## SCRIPT SQL 
+
+CREATE TABLE IF NOT EXISTS productos (
+    id SERIAL PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL,
+    descripcion TEXT,
+    precio NUMERIC(10, 2) NOT NULL,
+    imagen_url TEXT
+   
+);
+
+INSERT INTO productos (nombre, descripcion, precio, imagen_url) VALUES 
+('Polo Basico', 'Color entero, algodon pima', 30.0, 'https://images.unsplash.com/photo-1574180566232-aaad1b5b8450?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D');
+
+INSERT INTO productos (nombre, descripcion, precio, imagen_url) VALUES 
+('Pantalon Jean', 'Baggy, diseños variados', 80.0, 'https://images.unsplash.com/photo-1674075872359-a174bc7ed420?q=80&w=772&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D');
+
+INSERT INTO productos (nombre, descripcion, precio, imagen_url) VALUES 
+('Polera Boxy Fit', 'Con capucha, franela reactiva', 60.0, 'https://images.unsplash.com/photo-1614214191247-5b2d3a734f1b?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D');
+
+INSERT INTO productos (nombre, descripcion, precio, imagen_url) VALUES 
+('Short Regulable', 'Drill, bolsillos con cierre', 50.0, 'https://images.unsplash.com/photo-1740512922260-543b1b83c986?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D');
+
+INSERT INTO productos (nombre, descripcion, precio, imagen_url) VALUES 
+('Camisa Verano', 'Algodon, colores disponibles', 40.0, 'https://images.unsplash.com/photo-1605547781680-606148f1008c?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D');
+
+INSERT INTO productos (nombre, descripcion, precio, imagen_url) VALUES 
+('Pantalon Sastre', 'Cuerina, tipo elegante', 70.0, 'https://images.unsplash.com/photo-1656600277214-590de525404d?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D');
+
+
 
 ## ⚙️ Paso 1: Configurar Variables de Entorno (`.env`)
 
